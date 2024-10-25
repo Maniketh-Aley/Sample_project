@@ -1,0 +1,13 @@
+prefix=/Users/manikethaley/Documents/Internship GenAI Model/Project/venv
+exec_prefix=/Users/manikethaley/Documents/Internship GenAI Model/Project/venv
+libdir=/Users/manikethaley/Documents/Internship GenAI Model/Project/venv/lib
+sharedlibdir=/Users/manikethaley/Documents/Internship GenAI Model/Project/venv/lib
+includedir=/Users/manikethaley/Documents/Internship GenAI Model/Project/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

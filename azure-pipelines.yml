@@ -1,0 +1,27 @@
+# azure-pipelines.yml
+
+trigger:
+  branches:
+    include:
+      - main  # Adjust to the branch you’re using
+
+pool:
+  vmImage: 'ubuntu-latest'
+
+steps:
+- task: UsePythonVersion@0
+  inputs:
+    versionSpec: '3.x'
+    addToPath: true
+
+- script: |
+    python -m venv venv
+    source venv/bin/activate
+    python -m pip install --upgrade pip
+    pip install pytest
+  displayName: 'Install dependencies'
+
+- script: |
+    source venv/bin/activate
+    pytest test_main.py
+  displayName: 'Run tests'
