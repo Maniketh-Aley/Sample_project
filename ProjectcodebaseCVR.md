@@ -20,7 +20,7 @@ This repository contains the ML infrastructure to train, compute features for, a
 Real-World Use Cases
 
 User visits eBay homepage
-    → Ad ranking engine fires
+    → Ad ranking engine fires 
     → "Should I show Store A's ad or Store B's ad?"
     → CTR model: "User is 3.2% likely to click Store A, 1.1% on Store B"
     → CVR model: "Price ratio is 1.4, item has 847 sales, user likes electronics"
